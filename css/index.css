@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -143,4 +143,161 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* ////////// MY CODE \\\\\\\\\\ */
+
+/* ///// HOME \\\\\ */
+
+/* Nav Styling */
+.top-nav {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 30px 0 30px 0;
+}
+.top-nav a {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+.top-nav a:hover {
+	color: #ec6127;
+}
+
+/* Header Styling */
+header {
+	padding-bottom: 30px;
+}
+header img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Boxes Styling */
+#box1 {
+	background-color: teal;
+}
+#box2 {
+ background-color: gold;
+}
+#box3 {
+	background-color: cadetblue;
+}
+#box4 {
+	background-color: coral;
+}
+#box5 {
+	background-color: crimson;
+}
+#box6 {
+	background-color: forestgreen;
+}
+#box7 {
+	background-color: darkorchid;
+}
+#box8 {
+	background-color: hotpink;
+}
+#box9 {
+	background-color: indigo;
+}
+#box10 {
+	background-color: dodgerblue;
+}
+
+/* Footer */
+footer nav a:hover {
+	color: #ec6127;
+}
+
+/* ///// ABOUT PAGE \\\\\ */
+
+/* Header Styling */
+header h2 {
+	margin-top: 30px;
+}
+.about-header {
+	margin-bottom: 30px;
+	border-bottom: 1px dashed black;
+}
+
+/* Main Page Styling */
+.page-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.section-grid {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin: 20px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed black;
+}
+.section-grid img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.section-grid p {
+	margin-bottom: 15px;
+}
+.button {
+	text-decoration: none;
+	border: solid 2px #ec6127;
+	color: #ec6127;
+	font-size: 20px;
+	width: 60%;
+	text-align: center;
+	padding: 2% 5%;
+	border-radius: 10px;
+}
+.button:hover {
+	background-color: #ec6127;
+	border-color: lightgrey;
+	color: lightgrey;
+}
+
+ /* End Section */
+#about-end-section {
+	padding-bottom: 50px;
+}
+
+/* ///// MEDIA QUERIES & ANIM \\\\\ */
+@media (max-width: 620px) {
+	.top-nav {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		border: solid 2px black;
+		padding: 5%;
+		margin: 30px 0 30px 50%;
+		transform: translate(-50%);
+	}
+	.top-nav a {
+		margin-top: 10px;
+	}
+	.page-grid {
+		flex-direction: column;
+		align-items: center;
+	}
+	.section-grid {
+		width: 100%;
+	}
+	.button {
+		margin-left: 50%;
+		transform: translate(-50%);
+	}
+}
+.middle-content .boxes .box:hover {
+	animation: anim 2s infinite;
+
+}
+@keyframes anim {
+	100% {
+		transform: rotate(360deg);
+	}
 }
