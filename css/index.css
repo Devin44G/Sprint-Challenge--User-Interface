@@ -207,3 +207,61 @@ header img {
 #box10 {
 	background-color: dodgerblue;
 }
+
+/* Footer */
+footer nav a:hover {
+	color: #ec6127;
+}
+
+/* ///// ABOUT PAGE \\\\\ */
+
+/* Header Styling */
+header h2 {
+	margin-top: 30px;
+}
+.about-header {
+	margin-bottom: 30px;
+	border-bottom: 1px dashed black;
+}
+
+/* Main Page Styling */
+.page-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.section-grid {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin: 20px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed black;
+}
+.section-grid img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.section-grid p {
+	margin-bottom: 15px;
+}
+.button {
+	text-decoration: none;
+	border: solid 2px #ec6127;
+	color: #ec6127;
+	font-size: 20px;
+	width: 60%;
+	text-align: center;
+	padding: 2% 5%;
+	border-radius: 10px;
+}
+.button:hover {
+	background-color: #ec6127;
+	border-color: lightgrey;
+	color: lightgrey;
+}
+
+ /* End Section */
+#about-end-section {
+	padding-bottom: 50px;
+}

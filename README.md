@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    -> Semantic HTML are the tags/elements which give one's HTML meaning. More precisely, they are the specifically
+    named tags introduced to us in HTML5 in order to make our mark-up "code" more readable. Instead of wrapping a
+    section in a <div></div> which we would have to identify with a named class or ID attribute, we can simply wrap that
+    section in the <section></section> tag
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    -> display: block; takes up the entire confines of its parent element, pushing itself and whatever element after it onto a new line.
+        - Width and height can be changed.
+    -> display: inline; only takes up as much space as is needed (as its content takes up) and does not affect the elements around it.
+        - Width and height cannot be changed.
 
 3. What are the 4 areas of the box model?
 
+    -> Content - Padding - Border - Margin
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    -> The cross axis
+
 5. Explain why git is valuable to a team of developers.
+
+-> Allows for developers to easily keep up with/keep track of changes made in code
+-> Each new commit is a saved state of code which (if need be) one can retain access to
+-> Makes it difficult to overwrite (and thus lose) one another's code
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,13 +71,13 @@ You are expected to be able to answer all these questions. Your responses contri
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 
 ## Minimum Viable Product
